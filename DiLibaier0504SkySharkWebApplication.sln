@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiLibaier0504SkySharkWebApplication", "DiLibaier0504SkySharkWebApplication\DiLibaier0504SkySharkWebApplication.csproj", "{E8815944-3D19-41F3-B2B1-E4172C9DDB03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8815944-3D19-41F3-B2B1-E4172C9DDB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8815944-3D19-41F3-B2B1-E4172C9DDB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8815944-3D19-41F3-B2B1-E4172C9DDB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8815944-3D19-41F3-B2B1-E4172C9DDB03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66A47EE0-D51C-4607-80E0-2AE8DEC44B60}
+	EndGlobalSection
+EndGlobal
