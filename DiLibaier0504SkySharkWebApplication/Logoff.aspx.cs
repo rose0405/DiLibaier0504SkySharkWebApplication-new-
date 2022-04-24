@@ -9,9 +9,9 @@ namespace DiLibaier0504SkySharkWebApplication
 {
     public partial class Logoff : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, System.EventArgs e)
         {
-
+            Session.RemoveAll();
         }
     }
 }

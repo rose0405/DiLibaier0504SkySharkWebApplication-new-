@@ -49,7 +49,7 @@
             <asp:Label ID="Label6" runat="server" Text="Delete Username"></asp:Label>
         </td>
         <td>
-            <asp:TextBox ID="txtDelUserName" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtDelUserName" runat="server" Width="164px"></asp:TextBox>
         </td>
     </tr>
      <tr>
@@ -79,7 +79,7 @@
             <asp:Label ID="Label5" runat="server" Text="Role"></asp:Label>
         </td>
         <td>
-            <asp:ListBox ID="lstAddConfPassword" runat="server">
+            <asp:ListBox ID="lstAddRole" runat="server">
                 <asp:ListItem>BM</asp:ListItem>
                 <asp:ListItem>NA</asp:ListItem>
                 <asp:ListItem>LOB</asp:ListItem>
@@ -91,7 +91,7 @@
     <tr>
         <td></td>
         <td>
-            <asp:Button ID="btnAddSubmit" runat="server" Text="Submit" />
+            <asp:Button ID="btnAddSubmit" runat="server" Text="Submit" OnClick="btnAddSubmit_Click" />
         </td>
         <td></td>
         <td></td>
