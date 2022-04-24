@@ -131,7 +131,13 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="LOB\CancelRes.aspx" />
+    <Content Include="LOB\ConfirmRes.aspx" />
+    <Content Include="LOB\CreateRes.aspx" />
+    <Content Include="LOB\QueryStat.aspx" />
     <Content Include="Logoff.aspx" />
+    <Content Include="NA\ManageDatabases.aspx" />
+    <Content Include="NA\ManageUsers.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -238,12 +244,54 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="LOB\CancelRes.aspx.cs">
+      <DependentUpon>CancelRes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOB\CancelRes.aspx.designer.cs">
+      <DependentUpon>CancelRes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOB\ConfirmRes.aspx.cs">
+      <DependentUpon>ConfirmRes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOB\ConfirmRes.aspx.designer.cs">
+      <DependentUpon>ConfirmRes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOB\CreateRes.aspx.cs">
+      <DependentUpon>CreateRes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOB\CreateRes.aspx.designer.cs">
+      <DependentUpon>CreateRes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LOB\QueryStat.aspx.cs">
+      <DependentUpon>QueryStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOB\QueryStat.aspx.designer.cs">
+      <DependentUpon>QueryStat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Logoff.aspx.cs">
       <DependentUpon>Logoff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Logoff.aspx.designer.cs">
       <DependentUpon>Logoff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NA\ManageDatabases.aspx.cs">
+      <DependentUpon>ManageDatabases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NA\ManageDatabases.aspx.designer.cs">
+      <DependentUpon>ManageDatabases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NA\ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NA\ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -278,8 +326,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="images\" />
-    <Folder Include="LOB\" />
-    <Folder Include="NA\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

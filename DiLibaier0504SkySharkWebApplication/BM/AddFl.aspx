@@ -50,6 +50,7 @@
         <td>
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
     </tr>
+    
     <tr>
         <td>
             <asp:Label ID="Label2" runat="server" Text="Flight Number"></asp:Label></td>
