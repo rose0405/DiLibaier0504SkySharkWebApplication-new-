@@ -19,13 +19,13 @@ namespace DiLibaier0504SkySharkWebApplication.BM
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //get conntion -use your connection string name -ARPDatabaseConnectionString
+            
             String ConnectionString = ConfigurationManager.ConnectionStrings["APRDatabaseConnectionString"].ConnectionString;
             SqlConnection conn = new SqlConnection(ConnectionString);
             conn.Open();
 
             string selectSql = "Select FltNo from dtFltDetails";
-            //create dataadapter
+            
             SqlCommand cmd = new SqlCommand(selectSql, conn);
 
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -41,7 +41,7 @@ namespace DiLibaier0504SkySharkWebApplication.BM
                     return;
                 }
 
-            }//end of for 
+            }
             TimeSpan depttime, arrtime;
             String DeptDateTime, ArrDateTime;
             try
