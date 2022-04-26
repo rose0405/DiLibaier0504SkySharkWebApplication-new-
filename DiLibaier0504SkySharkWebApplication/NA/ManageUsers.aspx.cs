@@ -34,7 +34,7 @@ namespace DiLibaier0504SkySharkWebApplication.NA
             adapter.Fill(ds1, "dtUsers");
             if (ds1.Tables["dtUsers"].Rows.Count == 0)
             {
-                //insert
+                
                 string insertQueryString = "INSERT INTO [dtUsers] ([Username], [Password], [Role],PasswordChanged) VALUES ('" + username + "','" + password + "','" + role + "', 'True' )";
                 SqlCommand insterCommand = new SqlCommand(insertQueryString, conn);
                 insterCommand.ExecuteNonQuery();
@@ -81,7 +81,7 @@ namespace DiLibaier0504SkySharkWebApplication.NA
 
                 }
 
-            }//end else
+            }
         }
 
     }

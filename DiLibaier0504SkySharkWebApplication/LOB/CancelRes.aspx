@@ -33,11 +33,20 @@
         <td clospan="2">
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
     </tr>
+     <tr>
+                    <td colspan="2">
+                        <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red" Font-Bold="true"></asp:Label></td>
+                    <td></td>
+                    
+    </tr>
     <tr>
         <td>
             <asp:Label ID="Label2" runat="server" Text="Ticket No"></asp:Label></td>
         <td>
             <asp:TextBox ID="txtTNo" runat="server"></asp:TextBox></td>
+        <td>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtTNo" ErrorMessage="Please specify a valid ticket number"></asp:RequiredFieldValidator>
+        </td>
     </tr>
      <tr>
         <td></td>

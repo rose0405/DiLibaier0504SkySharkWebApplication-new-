@@ -20,7 +20,7 @@
     <div class="tabContents">
 <table>
     <tr>
-        <td clospan="2">
+        <td clospan="3">
             <asp:Label ID="Label2" runat="server" Text="Manage Database"></asp:Label>
         </td>
         <td></td>       

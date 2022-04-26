@@ -105,7 +105,7 @@ Business Executive
         <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
         <StaticSelectedStyle BackColor="#5D7B90" />
     </asp:Menu>
-    <div class="auto-style5">
+    <div class="tabContents">
 <table>
     <tr>
         <td clospan="2" class="auto-style7">
@@ -131,98 +131,120 @@ Business Executive
                     <!--for step 1-->
                     <table>
                         <tr>
-                            <td clospan="2" class="auto-style3" >
+                            <td clospan="2" >
                                 <asp:Label ID="Label2" runat="server" Text="Step 1:Specify Ticket Details" ></asp:Label></td>
                          </tr>
                         <tr>
-                            <td class="auto-style3">
+                                <td colspan="3">
+                                    <asp:Label ID="lblMessageStep1" runat="server" Text="" ForeColor="Red" Font-Bold="true" ></asp:Label></td>
+                                <td></td>
+                                
+                            </tr>
+                        <tr>
+                            <td>
                                 <asp:Label ID="Label3" runat="server" Text="Flight Number"></asp:Label></td>
                             <td>
                                 <asp:TextBox ID="txtFltNo" runat="server"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style3">
+                            <td>
                                 <asp:Label ID="Label4" runat="server" Text="Class"></asp:Label>
                             </td>
                             <td>
-                                <asp:ListBox ID="ListBox1" runat="server">
-                                    <asp:ListItem>Executive</asp:ListItem>
-                                    <asp:ListItem>Business</asp:ListItem>
+                                <asp:ListBox ID="lstClass" runat="server">
+                                    <asp:ListItem Value="Exec">Executive</asp:ListItem>
+                                    <asp:ListItem Value="Busi">Business</asp:ListItem>
                                 </asp:ListBox>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style3">
+                            <td>
                                 <asp:Label ID="Label5" runat="server" Text="Date"></asp:Label>
                             </td>
                             <td>
-                                <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Double" BorderWidth="2px"></asp:Calendar>
+                                <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style3"></td><td></td>
-                            <td>
-                                <asp:Button ID="btnNext" runat="server" Text="Next" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif" /></td>
                             <td></td>
+                                <td></td>
                         </tr>
+                         <tr>
+                                <td></td>
+                                 <td></td>
+                                <td>
+                                    &nbsp;</td>
+                                
+                                <td></td>
+                            </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                     </table>
                 </asp:WizardStep>
+
                 <asp:WizardStep ID="WizardStep2" runat="server" Title="Find flight Fare &amp; Status">
                     <!-- step 2-->
                      <table>
                         <tr>
-                            <td clospan="3" class="auto-style6">
+                            <td clospan="3">
                                 <asp:Label ID="Label1" runat="server" Text="Step 2:Confirm flight status and fare with customer"></asp:Label>
                                </td>
                         </tr>
                         <tr>
-                            <td class="auto-style4">
+                            <td>
                                 <asp:Label ID="Label7" runat="server" Text="Ticket No"></asp:Label></td>
                             <td>
                                 <asp:TextBox ID="txtTNo" runat="server"></asp:TextBox></td>
                             
                         </tr>
                         <tr>
-                            <td class="auto-style4">
+                            <td>
                                 <asp:Label ID="Label8" runat="server" Text="Fare"></asp:Label></td>
                             <td>
                                 <asp:TextBox ID="txtFare" runat="server"></asp:TextBox></td>
                             
                         </tr>
                         <tr>
-                            <td class="auto-style4">
+                            <td>
                                 <asp:Label ID="Label9" runat="server" Text="Status"></asp:Label></td>
                             <td>
                                 <asp:TextBox ID="txtStatus" runat="server"></asp:TextBox></td>
                         </tr>
                         <tr>
-                            <td class="auto-style4">
+                            <td>
                                 <asp:Label ID="Label10" runat="server" Text="Origin"></asp:Label></td>
                             <td>
                                 <asp:TextBox ID="txtOrg" runat="server"></asp:TextBox></td>
                         </tr>
                           <tr>
-                            <td class="auto-style4">
+                            <td>
                                 <asp:Label ID="Label11" runat="server" Text="Destination"></asp:Label></td>
                             <td>
                                 <asp:TextBox ID="txtDest" runat="server"></asp:TextBox></td>
                         </tr>
                           <tr>
-                            <td class="auto-style4">
+                            <td>
                                 <asp:Label ID="Label12" runat="server" Text="Departure Time"></asp:Label></td>
                             <td>
                                 <asp:TextBox ID="txtDepTime" runat="server"></asp:TextBox></td>
                         </tr>
                     </table>
                 </asp:WizardStep>
-                <asp:WizardStep runat="server" Title="Make Reservation">
+                <asp:WizardStep ID="WizardStep3" runat="server" Title="Make Reservation">
                     <!-- step 3-->
                      <table>
                         <tr>
                             <td colspan="3">
                                 <asp:Label ID="Label13" runat="server" Text="Step 3:Confirm Booking"></asp:Label></td>
                        </tr>
+                         <tr>
+                                <td colspan="3">
+                                    <asp:Label ID="lblMessageStep3" runat="server" Text="" ForeColor="Red" Font-Bold="true"></asp:Label></td>
+                                
+                            </tr>
                         <tr>
                             <td>
                                 <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label></td>
@@ -237,12 +259,9 @@ Business Executive
                             </tr>
                         <tr>
                             <td></td>
-                            <td>
-                                <asp:Button ID="btnCreate" runat="server" Text="Create " BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif" />
-                                <asp:Button ID="btnCancel" runat="server" Text="Cancle" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif" />
-                            </td>
-                            <td></td>
-                            <td></td>
+                             <td>
+                                    &nbsp;</td>
+                                <td></td>
                         </tr>
                     </table>
                 </asp:WizardStep>

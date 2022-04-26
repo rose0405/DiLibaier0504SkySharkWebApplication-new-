@@ -33,17 +33,34 @@
         <td clospan="2">
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
     </tr>
+   <tr>
+         <td colspan="3">
+            <asp:Label ID="lblMessage" runat="server" Text="" Font-Bold="true" ForeColor="Red"></asp:Label></td>
+         <td></td>
+                    
+                </tr>
     <tr>
-        <td>
-            <asp:Label ID="Label2" runat="server" Text="Ticket No"></asp:Label></td>
-        <td>
-            <asp:TextBox ID="txtTNo" runat="server"></asp:TextBox></td>
-    </tr>
-     <tr>
-        <td></td>
-        <td>
-            <asp:Button ID="btnCancel" runat="server" Text="Confirm Ticket" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif" /></td>
-    </tr>
+                    <td>
+                        <asp:Label ID="Label2" runat="server" Text="Ticket No"></asp:Label></td>
+                    <td>
+                        <asp:TextBox ID="txtTNo" runat="server"></asp:TextBox>
+                    </td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtTNo" ErrorMessage="Please specify a valid ticket number"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+    <tr>
+                    <td></td>
+                    <td>
+                        <asp:Button ID="btnConfirm" runat="server" Text="Confirm Ticket" OnClick="btnConfirm_Click" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <asp:Label ID="lblDetails" runat="server" Text="" ForeColor="#990000" Font-Bold="true"></asp:Label></td>
+                    <td></td>
+                    
+                </tr>
     </table>
     </div>
     </form>

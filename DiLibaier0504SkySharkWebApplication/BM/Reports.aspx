@@ -40,7 +40,7 @@
             <asp:Label ID="Label2" runat="server" Text="Generate a flight usage report for all rights flown by the airline."></asp:Label>
         </td>
         <td>
-            <asp:Button ID="Button1" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate" />
+            <asp:Button ID="Button1" runat="server" Text="Generate Flight usage report" BackColor="Silver" BorderColor="Blue" OnClick="Button1_Click" />
         </td>
         <td></td>
     </tr>
@@ -49,7 +49,7 @@
             <asp:Label ID="Label3" runat="server" Text="Generate a customer affinity report for top 100 customers"></asp:Label>
         </td>
         <td>
-            <asp:Button ID="Button2" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate" />
+            <asp:Button ID="Button2" runat="server" Text="Generate customer affinity report" BackColor="Silver" BorderColor="Blue" OnClick="Button2_Click"  />
         </td>
         <td></td>
     </tr>
@@ -70,15 +70,17 @@
                 <asp:ListItem>11</asp:ListItem>
                 <asp:ListItem>12</asp:ListItem>
             </asp:ListBox>
-            <asp:ListBox ID="Year" runat="server">
+            <asp:ListBox ID="lstYear" runat="server">
                 <asp:ListItem>2002</asp:ListItem>
                 <asp:ListItem>2003</asp:ListItem>
                 <asp:ListItem>2004</asp:ListItem>
                 <asp:ListItem>2005</asp:ListItem>
+                <asp:ListItem>2021</asp:ListItem>
+                <asp:ListItem>2022</asp:ListItem>
             </asp:ListBox>
         </td>
         <td>
-            <asp:Button ID="Button3" runat="server" BackColor="Silver" BorderColor="Blue" Text="Generate" />
+            <asp:Button ID="Button3" runat="server" Text="Generate total revenue report" BackColor="Silver" BorderColor="Blue"  OnClick="Button3_Click" />
         </td>
         <td></td>
     </tr>

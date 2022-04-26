@@ -114,13 +114,13 @@ namespace DiLibaier0504SkySharkWebApplication.BM
         protected global::System.Web.UI.WebControls.ListBox lstMonth;
 
         /// <summary>
-        /// Year 控件。
+        /// lstYear 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox Year;
+        protected global::System.Web.UI.WebControls.ListBox lstYear;
 
         /// <summary>
         /// Button3 控件。

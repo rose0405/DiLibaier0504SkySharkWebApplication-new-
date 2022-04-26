@@ -60,6 +60,15 @@ namespace DiLibaier0504SkySharkWebApplication.BM
         protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
 
         /// <summary>
+        /// lblMessage 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage;
+
+        /// <summary>
         /// Label2 控件。
         /// </summary>
         /// <remarks>
@@ -78,6 +87,15 @@ namespace DiLibaier0504SkySharkWebApplication.BM
         protected global::System.Web.UI.WebControls.TextBox txtFlightNumber;
 
         /// <summary>
+        /// RequiredFieldValidator10 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
+
+        /// <summary>
         /// Label3 控件。
         /// </summary>
         /// <remarks>
@@ -85,6 +103,15 @@ namespace DiLibaier0504SkySharkWebApplication.BM
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
+
+        /// <summary>
+        /// Calendar1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
 
         /// <summary>
         /// txtDepartureTime 控件。
@@ -139,6 +166,15 @@ namespace DiLibaier0504SkySharkWebApplication.BM
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
+
+        /// <summary>
+        /// Calendar2 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar2;
 
         /// <summary>
         /// txtArrivalTime 控件。
@@ -303,13 +339,13 @@ namespace DiLibaier0504SkySharkWebApplication.BM
         protected global::System.Web.UI.WebControls.Label Label11;
 
         /// <summary>
-        /// txtBusiFare 控件。
+        /// txtBusinessClasFare 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBusiFare;
+        protected global::System.Web.UI.WebControls.TextBox txtBusinessClasFare;
 
         /// <summary>
         /// RequiredFieldValidator9 控件。

@@ -19,18 +19,18 @@
         <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
         <StaticSelectedStyle BackColor="#5D7B90" />
     </asp:Menu>
-    <div class="auto-style5">
+    <div class="tabContents">
 <table>
     <tr>
-        <td clospan="2" class="auto-style7">
-            <asp:Label ID="Label6" runat="server" Text="Make a new Reservation"></asp:Label>
+        <td clospan="2" >
+            <asp:Label ID="Label6" runat="server" Text="Enquiry About Flight and Ticket Status"></asp:Label>
  </td>     
     </tr>
     <tr>
-        <td clospan="2" class="auto-style7">
+        <td>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ChangePassword.aspx">Change Password</asp:HyperLink>
       </td>
-        <td clospan="2">
+        <td>
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink></td>
     </tr>
     </table>
@@ -46,9 +46,17 @@
                     <table>
                         <tr>
                             <td>
-                                <asp:Label ID="Label1" runat="server" Text="Enquire about the status of flights"></asp:Label>
+                                <asp:Label ID="Label1" runat="server" Text="Enquiry  Flight Status"></asp:Label>
                             </td>
+                            <td></td>
+                            <td></td>
                         </tr>
+                        <tr>
+                                    <td>
+                                        <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red" Font-Bold="true"></asp:Label></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
                         <tr>
                             <td>
                                 <asp:Label ID="Label2" runat="server" Text="Flight Number"></asp:Label></td>
@@ -59,7 +67,7 @@
                             <td>
                                 <asp:Label ID="Label3" runat="server" Text="Class"></asp:Label></td>
                             <td>
-                                <asp:ListBox ID="ListBox1" runat="server">
+                                <asp:ListBox ID="lstClass" runat="server">
                                     <asp:ListItem>Executive</asp:ListItem>
                                     <asp:ListItem>Business</asp:ListItem>
                                 </asp:ListBox></td>
@@ -68,15 +76,16 @@
                             <td>
                                 <asp:Label ID="Label4" runat="server" Text="Date"></asp:Label></td>
                             <td>
-                                <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Double" BorderWidth="2px"></asp:Calendar>
+                                <asp:Calendar ID="calDepDate" runat="server" OnSelectionChanged="calDepDate_SelectionChanged"></asp:Calendar>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td></td>
+                            
                             <td>
-                                <asp:Button ID="Button1" runat="server" Text="Submit" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif"/></td>
-                        </tr>
+                                <asp:Button ID="btnFStatSubmit" runat="server" Text="Submit" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif"/></td>
+                       <td></td>
+                            </tr>
                         </table>
                 </asp:WizardStep>
                 <asp:WizardStep ID="WizardStep2" runat="server" Title="Query Tickets Status">
@@ -84,8 +93,16 @@
                     <table>
                         <tr>
                             <td>
-                                <asp:Label ID="Label5" runat="server" Text="Query Tickets Status"></asp:Label></td>
+                                <asp:Label ID="Label5" runat="server" Text="Enquiry Ticket Status"></asp:Label></td>
+                        <td></td>
+                                    <td></td>
                         </tr>
+                        <tr>
+                                    <td>
+                                        <asp:Label ID="lblTicketStatus" runat="server" Text="" ForeColor="Red" Font-Bold="true"></asp:Label></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
                         <tr>
                             <td>
                                 <asp:Label ID="Label7" runat="server" Text="Ticket No"></asp:Label></td>
@@ -95,7 +112,7 @@
                         <tr>
                             <td></td>
                             <td>
-                                <asp:Button ID="Button2" runat="server" Text="Sumbit" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif"/></td>
+                                <asp:Button ID="btnTStatSubmit" runat="server" OnClick="btnTStatSubmit_Click"/></td>
                         </tr>
                     </table>
                 </asp:WizardStep>
